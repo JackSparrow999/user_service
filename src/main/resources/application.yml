@@ -1,0 +1,30 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    url:
+    username:
+    password:
+
+    hikari:
+      data-source-properties:
+        stringtype: unspecified
+
+
+
+  jpa:
+    show_sql: true
+
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+search:
+  baseUrl: http://127.0.0.1:8002
+
+server:
+  port: 8001
